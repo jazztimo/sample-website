@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and CSS styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Timothy Lopez">
+    <meta name="Section" content="BSIT-WMA-3A">
+    <link rel="icon" type="image" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/259292478_432234018504018_4762078165364859287_n.png?_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeFynEjk-4espUmI-n2qNoYLr6AAmlpgceuvoACaWmBx6winVeit5lG9-Tc8MZw0rHMNX_PEFfxrTJySQh_3L1d6&_nc_ohc=19f7Qr8xykgAX-eXSfK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTn2g66HRpD_sHn1Ml21k3W0mrJdnCT8d1VLJBzwMaKSQ&oe=654419E3">
+    <title>Sign Up</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .above {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .parent-link {
+            display: flex;
+            font-size: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .links {
+            padding: 0 1.5rem;
+            margin: 0;
+            color: #faf9f6;
+            text-decoration: none;
+        }
+
+        .links:hover {
+            opacity: .9;
+        }
+
+        nav {
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 32px;
+        }
+
+        .links:hover {
+            opacity: .75;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(195, 195, 195);
+            background: linear-gradient(45deg, rgb(134, 138, 141) 0%, rgba(111, 111, 203, 1) 33%, rgba(0, 212, 255, 1) 100%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 2rem;
+        }
+
+        .sub-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%; /* Full width on all screens */
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: rgba(50, 50, 93, 0, 25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px;
+            background-color: rgba(255, 255, 255, 0.65);
+        }
+
+        h2 {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            padding-left: 16px;
+            opacity: 0.75;
+        }
+
+        input {
+            font-size: 16px;
+            display: flex;
+            border-radius: 50px;
+            border-style: none;
+            outline: none;
+            margin-top: 1px;
+            padding: 9px 25px;
+            background-color: #EAEEED;
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 2px #2196F3;
+            opacity: 0.7;
+        }
+
+        button {
+            padding: 8px 32px;
+            border-radius: 50px;
+            border-style: none;
+            outline: none;
+            margin-top: .25rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            background-color: #1A1B27;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        hr {
+            margin-top: 1rem;
+            width: 100%;
+            opacity: .5;
+        }
+
+        footer {
+            text-align: center;
+            color: #faf9f6;
+            padding: 1rem;
+            position: static;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            /* Apply styles for screens with a maximum width of 768px (common smartphone size) */
+            .sub-form {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and navigation bar -->
+    <header>
+        <!-- Navigation bar content -->
+        <nav class="above">
+            <div class="parent-link">
+                <a href="#" class="links">About</a>
+                <a href="#" class="links">Projects</a>
+                <a href="#" class="links">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Sign-up form and other content -->
+    <div class="form">
+        <form action="#" class="sub-form">
+            <!-- Sign-up form fields -->
+            <div class="upper-form">
+                <h2>Sign Up Form</h2>
+                <label>Username</label><br>
+                <input type="text" name="username" id="username" placeholder="Enter your Username"><br>
+                <label>First Name</label><br>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your First Name"><br>
+                <label>Last Name</label><br>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your Last Name"><br>
+                <label>Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your Email Address"><br>
+                <label>Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter your Password" minlength="8"><br>
+                <label>Phone Number</label><br>
+                <input type="tel" name="Phone" id="phone" placeholder="Enter your Phone Number"><br>
+            </div>
+            <div class="bottom-form">
+                <!-- <button type="reset">Cancel</button> -->
+                <button type="submit" onclick="alert('Signed up Successfully')">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <address>
+            <small> <hr><br>
+                Lopez, Mark Timothy | BSIT-WMA-3A | timothylopez0730@gmail.com   </small>
+        </address>
+    </footer>
+</body>
+</html>
